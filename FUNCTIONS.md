@@ -51,3 +51,29 @@ min_price
 ---------
 100.00
 ```
+
+### **Function Name**: `GetDeliveryDates`
+
+**Purpose**: This function retrieves the number of days required to deliver to a specified city.
+
+**Description**:
+- The function takes a city name (`p_city`) as its parameter.
+- It checks whether the provided city is one of the main cities.
+- If the city is among the main cities, then the delivery days are set to 5.
+- If the city is not in the main cities list, the delivery days are set to 7.
+- The function returns the number of delivery days as an integer.
+
+**Example:**
+
+```sql
+-- Get the delivery days for the city 'Galle'
+SELECT GetDeliveryDates('Galle') AS delivery_days;
+```
+
+**Output:**
+
+```
+delivery_days
+-------------
+5
+```
