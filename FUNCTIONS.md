@@ -52,22 +52,30 @@ min_price
 100.00
 ```
 
-### **Function Name**: `GetDeliveryDays`
+### **Function Name**: `CalculateDeliveryDays`
 
-**Purpose**: This function retrieves the number of days required to deliver to a specified city.
+**Purpose**: This function calculates the estimated number of delivery days for a customer based on the customer's city and the stock availability of items in their cart.
 
 **Description**:
-- The function takes a city name (`p_city`) as its parameter.
-- It checks whether the provided city is one of the main cities.
-- If the city is among the main cities, then the delivery days are set to 5.
-- If the city is not in the main cities list, the delivery days are set to 7.
-- The function returns the number of delivery days as an integer.
+- The function accepts two parameters:
+  - `p_customer_id` (`INT`): The ID of the customer.
+  - `p_city` (`VARCHAR(255)`): The city to which the delivery is being made.
+  
+- The function queries the `cart` table to identify the cart associated with the given customer ID.
+- It then checks the `cart_item` and `item` tables to determine if there are any items in the cart that are out of stock.
+- Based on the stock availability and delivery city, the function calculates the delivery days as per the following conditions:
+  1. If all items are in stock and the delivery is to a main city (e.g., Colombo), the estimated delivery time is 5 days.
+  2. If all items are in stock but the delivery is to a non-main city (e.g., Negombo), the estimated delivery time is 7 days.
+  3. If any item is out of stock, an additional 3 days are added to the delivery estimates from the previous two points.
+  
+- The main cities considered in this function are: 'Anuradhapura', 'Colombo', 'Jaffna', 'Kandy', 'Galle', and 'Sri Jayewardenepura Kotte'.
+- The function returns the estimated delivery days as an integer value.
 
 **Example:**
 
 ```sql
--- Get the delivery days for the city 'Galle'
-SELECT GetDeliveryDays('Galle') AS delivery_days;
+-- Calculate the delivery days for a customer with ID 2 delivering to Colombo
+SELECT CalculateDeliveryDays(2, 'Colombo') AS delivery_days;
 ```
 
 **Output:**
@@ -77,3 +85,5 @@ delivery_days
 -------------
 5
 ```
+
+Note: The above output suggests that the customer with ID 2, delivering to Colombo, will receive their items in 5 days, given that all items are in stock. If any item were out of stock, this would be increased to 8 days.
