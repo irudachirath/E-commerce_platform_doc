@@ -52,7 +52,7 @@ min_price
 100.00
 ```
 
-### **Function Name**: `GetDeliveryDates`
+### **Function Name**: `GetDeliveryDays`
 
 **Purpose**: This function retrieves the number of days required to deliver to a specified city.
 
@@ -67,7 +67,7 @@ min_price
 
 ```sql
 -- Get the delivery days for the city 'Galle'
-SELECT GetDeliveryDates('Galle') AS delivery_days;
+SELECT GetDeliveryDays('Galle') AS delivery_days;
 ```
 
 **Output:**
