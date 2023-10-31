@@ -53,7 +53,7 @@ In this Project We implement a database design for a single vendor e-commerce pl
 
 - [Getting Started](#Getting-Started)
 - [Browsing and Shopping](#Browsing-and-Shopping)
-- [Checkout and Paymen](#Checkout-and-Payment)
+- [Checkout and Payment](#Checkout-and-Payment)
 - [Managing Your Account](#Managing-Your-Account)
 - [Analytics](#Analytics)
 - [Contacting Support](#Contacting-Support)
