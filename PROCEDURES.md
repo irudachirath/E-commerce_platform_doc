@@ -1,3 +1,35 @@
+# Procedures for product management
+
+A set of procedures that can be used to manage products, variants, and attributes.
+
+### Purpose of each procedure:
+
+* `insert_variant_if_not_exists`: Inserts a given variant name into the variant table if it does not exist.
+* `insert_attribute_if_not_exists`: Inserts a given attribute name into the attribute table if it does not exist for the given variant.
+* `add_item`: Adds a new item to the item table, with the given product ID, price, quantity, image, variant types, and attribute names.
+* `add_product`: Adds a new product to the product table, with the given title, category list, description, weight, SKU, and image.
+
+### Example queries:
+
+Insert a new variant named "Size" into the variant table if it does not exist
+```sql
+CALL insert_variant_if_not_exists('Size');
+```
+Insert a new attribute named "Color" into the attribute table for the "Size" variant, if it does not exist
+```sql
+CALL insert_attribute_if_not_exists('Color', 'Size');
+```
+
+Add a new item to the item table
+```sql
+CALL add_item(1, 100.00, 10, 'product.jpg', 2, 'Size,Color', 'Red,Blue');
+```
+
+Add a new product to the product table
+```sql
+CALL add_product('T-Shirt', 'Clothing,Tops', 'A comfortable and stylish t-shirt.', 0.5, 'T-Shirt-1', 't-shirt.jpg');
+```
+
 # Procedures for generating admin reports
 
 A set of procedures that can be used to generate admin reports for a given year, quarter, product category, product, or customer.
