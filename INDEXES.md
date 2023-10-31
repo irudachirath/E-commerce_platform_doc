@@ -7,3 +7,10 @@ The `idx_date` index on the `shop_order` table's `Date` column improves query pe
 ### Before creating the index:
 
 ![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/before_index.png?raw=true)
+
+### After creating the index:
+
+![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/after_index.png?raw=true)
+
+
+
