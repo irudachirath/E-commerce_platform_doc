@@ -11,22 +11,17 @@ A set of procedures that can be used to manage products, variants, and attribute
 
 ### Example queries:
 
-Insert a new variant named "Size" into the variant table if it does not exist
 ```sql
+-- Insert a new variant named "Size" into the variant table if it does not exist
 CALL insert_variant_if_not_exists('Size');
-```
-Insert a new attribute named "Color" into the attribute table for the "Size" variant, if it does not exist
-```sql
+
+-- Insert a new attribute named "Color" into the attribute table for the "Size" variant, if it does not exist
 CALL insert_attribute_if_not_exists('Color', 'Size');
-```
 
-Add a new item to the item table
-```sql
+-- Add a new item to the item table
 CALL add_item(1, 100.00, 10, 'product.jpg', 2, 'Size,Color', 'Red,Blue');
-```
 
-Add a new product to the product table
-```sql
+-- Add a new product to the product table
 CALL add_product('T-Shirt', 'Clothing,Tops', 'A comfortable and stylish t-shirt.', 0.5, 'T-Shirt-1', 't-shirt.jpg');
 ```
 
@@ -47,31 +42,25 @@ A set of procedures that can be used to generate admin reports for a given year,
 
 ### Example queries:
 
-Get the sales quantity for all products for the year 2023 and quarter 1
 ```sql
+-- Get the sales quantity for all products for the year 2023 and quarter 1
 CALL get_sales_quantity(2023, 1);
-```
 
-Get the sales quantity for all products in the category 1 for the year 2023 and quarter 1
-```sql
+-- Get the sales quantity for all products in the category 1 for the year 2023 and quarter 1
 CALL get_sales_of_a_category(1, 2023, 1);
-```
-Get the sales quantity for the product with ID 1 for the year 2023 and quarter 1
-```sql
+
+-- Get the sales quantity for the product with ID 1 for the year 2023 and quarter 1
 CALL get_sales_of_a_product(1, 2023, 1);
-```
-Get the number of orders placed in the year 2023 and quarter 1
-```sql
+
+-- Get the number of orders placed in the year 2023 and quarter 1
 CALL get_orders_quantity(2023, 1);
-```
-Get the top 10 selling products for the year 2023 and quarter 1
-```sql
+
+-- Get the top 10 selling products for the year 2023 and quarter 1
 CALL get_most_sellings(2023, 1, 10);
-```
-Get the order details for the customer with ID 1
-```sql
+
+-- Get the order details for the customer with ID 1
 CALL get_order_report(1);
-```
-Get the most popular time of year for the product with ID 1
-```sql
+
+-- Get the most popular time of year for the product with ID 1
 CALL get_most_popular_time_for_product(1);
+```
