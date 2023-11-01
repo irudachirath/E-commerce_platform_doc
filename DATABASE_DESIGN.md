@@ -34,3 +34,7 @@
 
 6. **Hierarchical Data**:
     - The `category` table uses a self-referencing foreign key (`Parent_Category_id`) to establish a category hierarchy, allowing for nested categories in the e-commerce platform.
+
+7. **Storing Images Using Firebase**:
+
+    - When dealing with images especially in databases for e-commerce platforms where large volumes of images might be stored, it's often a best practice to avoid saving the images directly within the relational database. Because relational database storage can be more expensive compared to specialized storage solutions designed for multimedia content. Therefore we use Firebase to store images and store only the link to the image in the database. 
