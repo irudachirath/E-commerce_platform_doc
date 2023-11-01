@@ -1,4 +1,4 @@
-<h1 align = "center"> Single Vendor E-Commerce Platform - C </h1>
+<!-- <h1 align = "center"> Single Vendor E-Commerce Platform - C </h1>
 <p align="center">
     <picture>
       <source 
@@ -11,7 +11,11 @@
         width="800"
        />
     </picture>
-  </p>
+  </p> -->
+
+# Single Vendor E-Commerce Platform - C
+
+![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/cover_page.png?raw=true)
 
 In this Project We implement a database design for a single vendor e-commerce platform for the company "C", a local chain retailer in Texas. We develop a simple UI to demonstrate All functionalities of database. Following features are implemented in this project:
 
