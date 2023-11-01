@@ -3,7 +3,7 @@
 ### Consistency and Avoiding Redundancy:
 
 1. **Unique Constraints**: 
-    - Ensures unique data for specific columns, thereby preventing redundancy. For instance, `Admin_username` in the `admin` table, `Email` in the `customer` table, and `Title` in the `product` table have been made UNIQUE to prevent duplicate entries.
+    - Ensures unique data for specific columns, thereby preventing redundancy. For instance, `Admin_username` in the `admin` table and `Email` in the `customer` table have been made UNIQUE to prevent duplicate entries.
 
 2. **Primary Keys**: 
     - Each table has a primary key, ensuring a unique identifier for each row, which in turn maintains consistency.
