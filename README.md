@@ -84,7 +84,7 @@ To get started with the platform, follow these steps :
     plaintext
     https://github.com/PasanMadhuranga/Ecommerce-Platform-G32
 
-2.  Open MySQL workbench (Recommended) or MySQL command line client. Go to the databse_creation Folder and run the databsev1.0.sql file. This will create your database and fill it with sample data.
+2. Utilize a MySQL client, such as the MySQL Workbench (recommended) or the MySQL command line client. Navigate to the "database" directory, and execute the `G32_Complete_Database.sql` script. This action will initialize your database, incorporating all requisite stored procedures, functions, views, triggers, and indexes. Additionally, it will populate the database with preliminary sample data.
 
 3.  Open a new Terminal from the cloned directory and cd in to the server directory.
 
@@ -258,19 +258,7 @@ These are essential Python libraries and packages that your project relies on to
 
 ## Entity-Relationship (ER) Diagram
 
-<p align="center">
-    <picture>
-      <source 
-        srcset="assets/ERdiagram.png"
-        media="(prefers-color-scheme: dark)"
-      />
-      <img 
-        src="assets/ERdiagram.png" 
-        alt="ER Diagram"
-        height ="600"
-       />
-    </picture>
-  </p>
+![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/ER_Diagram_v2.0.png?raw=true)
 
 ## Project Structure
 
