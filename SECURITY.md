@@ -8,8 +8,8 @@
     ![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/hash_password.png?raw=true)
 
 2. **Password Verification**:
-   - When a user logs in, their inputted password is compared with the stored hash in our database.
-   - The bcrypt's `compare` function is used for this verification. It checks if the hashed version of the inputted password matches the stored hash without ever converting the hash back to plain-text. This ensures a secure and efficient login process.
+   - When a user logs in, their given password is compared with the stored hash in our database.
+   - The bcrypt's `compare` function is used for this verification. It checks if the hashed version of the given password matches the stored hash without ever converting the hash back to plain-text. This ensures a secure and efficient login process.
 
    ![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/compare_password.png?raw=true)
 
