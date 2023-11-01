@@ -1,19 +1,4 @@
-<!-- <h1 align = "center"> Single Vendor E-Commerce Platform - C </h1>
-<p align="center">
-    <picture>
-      <source 
-        srcset="https://firebasestorage.googleapis.com/v0/b/e-commerce-3356b.appspot.com/o/Banner.png?alt=media&token=73571f95-149f-4691-8d53-26fb117b56ee&_gl=1*jjsjus*_ga*NjM3NzczMzI4LjE2OTc3MzU5ODI.*_ga_CW55HF8NVT*MTY5ODY3MTQ1OS4yMy4xLjE2OTg2NzE1NTMuNjAuMC4w"
-        media="(prefers-color-scheme: dark)"
-      />
-      <img 
-        src="https://firebasestorage.googleapis.com/v0/b/e-commerce-3356b.appspot.com/o/Banner.png?alt=media&token=73571f95-149f-4691-8d53-26fb117b56ee&_gl=1*jjsjus*_ga*NjM3NzczMzI4LjE2OTc3MzU5ODI.*_ga_CW55HF8NVT*MTY5ODY3MTQ1OS4yMy4xLjE2OTg2NzE1NTMuNjAuMC4w" 
-        alt="C-Store Project Cover Image"
-        width="800"
-       />
-    </picture>
-  </p> -->
-
-# Single Vendor E-Commerce Platform - C
+<h1 align = "center"> Single Vendor E-Commerce Platform - C </h1>
 
 ![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/cover_page.png?raw=true)
 
@@ -197,6 +182,8 @@ Welcome to our e-commerce platform, where your shopping experience is our top pr
 ## Getting Started
 
 To embark on your shopping journey, you'll first need to navigate to our homepage.Here, you will find a navigation bar with some buttons such as "HOME", "SHOP", "CATEGORIES", "CART", "SIGN UP" and "LOGIN". Additionally, you'll find a variety of product categories are displayed, such as consumer electronics and toys. Clicking on any of these categories will take the user to a page showcasing all the products available in that category. There will be all the available products in the shop there in the homepage below the categories.
+
+![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/home.png?raw=true)
 
 ## Browsing Products
 
