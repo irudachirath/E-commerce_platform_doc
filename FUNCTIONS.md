@@ -87,3 +87,34 @@ delivery_days
 ```
 
 Note: The above output suggests that the customer with ID 2, delivering to Colombo, will receive their items in 5 days, given that all items are in stock. If any item were out of stock, this would be increased to 8 days.
+
+Of course, I can enhance the function description to reflect this specific use case. Here's the updated description:
+
+### **Function Name**: `CalculateItemDeliveryDays`
+
+**Purpose**: This function calculates the additional delivery days for guest users based on the item quantity they intend to purchase, and compares it to its stock availability.
+
+**Description**:
+- The function is particularly designed for guest users. While registered users have their cart details stored in the database, guest users have their cart details stored in cookies. Hence, for guest users, the system needs a way to manually check item availability and potential delivery delays.
+- The function accepts two parameters: the `item_id` (`p_item_id`) and the quantity of the item being ordered (`p_quantity`).
+- Initially, it retrieves the quantity available in stock for the given item from the `item` table.
+- The function then checks if the ordered quantity exceeds the available quantity in stock.
+- If the ordered quantity surpasses the stock, an additional 3 delivery days are added. Otherwise, no extra days are added.
+- The function returns the number of additional delivery days as an integer.
+
+**Example**:
+
+```sql
+-- Get the additional delivery days for a guest order of 10 units of the item with ID 5
+SELECT CalculateItemDeliveryDays(5, 10) AS additional_days;
+```
+
+**Output**:
+
+```
+additional_days
+---------------
+3
+```
+
+**Note**: The above output implies that if a guest user orders 10 units of the item with ID 5 and if the ordered quantity exceeds the available stock, an additional 3 days will be added to the delivery estimate.
