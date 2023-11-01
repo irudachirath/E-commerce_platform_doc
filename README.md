@@ -18,13 +18,13 @@ In this Project We implement a database design for a single vendor e-commerce pl
 ### Customer Functionalities
 
 - Shopping: The platform provide Customers to browse all the products, filter product by some attributes and add products to the cart if they wish to purchase.
-- Order management: The platform allows Customers to place orders, manage their payments and also manage delivary method.
-- Reporting: The platform provides a variety of reports to customers. They can get full detailed report of their order history and also user can get details of each order
+- Order management: The platform allows Customers to place orders, manage their payments and also manage delivery method.
+- Analytics: The platform provides a variety of reports to customers. They can get full detailed report of their order history and also user can get details of each order
 
 ### Admin Functionalities
 
 - Product management: The platform allows Admins to create and manage products, including their variants, categories, and inventory.
-- Reporting: The platform provides a variety of reports to help administrators to track the performance of their e-commerce business like sales roport.
+- Analytics: The platform provides a variety of reports to help administrators to track the performance of their e-commerce business like sales report.
 
 # Quick Links
 
@@ -276,7 +276,7 @@ These are essential Python libraries and packages that your project relies on to
 
 - In templates, this directory holds HTML templates that are used to render web pages.
 
-- The intial database is configured in this darabaseConfig.py file.
+- The intial database is configured in this databaseConfig.py file.
 
 - dbaccess.py file contains the functions to communicate with the database using sql queries
 
