@@ -1,4 +1,4 @@
-# Procedures
+# Stored Procedures
 ## Procedures for product management
 
 A set of procedures that can be used to manage products, variants, and attributes.
