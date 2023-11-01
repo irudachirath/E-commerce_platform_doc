@@ -6,13 +6,12 @@ In this Project We implement a database design for a single vendor e-commerce pl
 
 ### Customer Functionalities
 
-- Shopping: The platform provide Customers to browse all the products, filter product by some attributes and add products to the cart if they wish to purchase.
+- Shopping: The platform provide Customers to browse all the products and add products to the cart if they wish to purchase.
 - Order management: The platform allows Customers to place orders, manage their payments and also manage delivery method.
-- Analytics: The platform provides a variety of reports to customers. They can get full detailed report of their order history and also user can get details of each order
+- Analytics: The platform provides users a full detailed report of their order history.
 
 ### Admin Functionalities
 
-- Product management: The platform allows Admins to create and manage products, including their variants, categories, and inventory.
 - Analytics: The platform provides a variety of reports to help administrators to track the performance of their e-commerce business like sales report.
 
 <br>
@@ -78,7 +77,6 @@ In this Project We implement a database design for a single vendor e-commerce pl
 To get started with the platform, follow these steps :
 
 1.  Clone this repository.
-    plaintext
     https://github.com/PasanMadhuranga/Ecommerce-Platform-G32
 
 2. Utilize a MySQL client, such as the MySQL Workbench (recommended) or the MySQL command line client. Navigate to the "database" directory, and execute the `G32_Complete_Database.sql` script. This action will initialize your database, incorporating all requisite stored procedures, functions, views, triggers, and indexes. Additionally, it will populate the database with preliminary sample data.
@@ -188,7 +186,7 @@ Welcome to our e-commerce platform, where your shopping experience is our top pr
 
 ## Getting Started
 
-To embark on your shopping journey, you'll first need to navigate to our homepage.Here, you will find a navigation bar with some buttons such as "HOME", "SHOP", "CATEGORIES", "CART", "SIGN UP" and "LOGIN". Additionally, you'll find a variety of product categories are displayed, such as consumer electronics and toys. Clicking on any of these categories will take the user to a page showcasing all the products available in that category. There will be all the available products in the shop there in the homepage below the categories.
+To embark on your shopping journey, you'll first need to navigate to our homepage.Here, you will find a navigation bar with some buttons such as "HOME", "SHOP", "CATEGORIES", "CART", "SIGN UP" and "LOGIN". Additionally, you'll find a variety of product categories are displayed, such as consumer electronics and toys and all sub-categories. Clicking on any of these categories will take the user to a page showcasing all the products available in that category.
 
 ![alt text](https://github.com/irudachirath/E-commerce_platform_doc/blob/main/home.png?raw=true)
 
@@ -206,7 +204,6 @@ Once you've settled on a product, specify the desired quantity and click on the 
 
 Your personal dashboard is accessible by logging into your account using the "Login" button or by registering as a registered user using the "Sign Up" on the navigation panel on the top of the screen. This space is designed to give you control over various aspects of your account. From account creating to viewing your order history. You can log out from your account anytime using the "Log Out" button located in the same space.
 
-Edit This!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # Analytics
 
 For those with administrative privileges, an "Admin" button is available in the navigation bar post-login. This feature grants access to several critical reports and analytics:
